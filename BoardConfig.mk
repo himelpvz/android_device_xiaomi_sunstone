@@ -98,3 +98,35 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
+
+#SHRP specific build flags
+
+SHRP_DEVICE_CODE := sunstone 
+SHRP_PATH := device/xiaomi/sunstone
+SHRP_MAINTAINER := Himel_pvz
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_HAS_RECOVERY_PARTITION := false
+SHRP_AB := true
+SHRP_EDL_MODE := 1
+
+#Mount points
+
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+
+#SHRP Theming
+
+SHRP_NOTCH := true
+SHRP_DARK := true
+
+#Custom led paths for flashlight (Yes, idk which one actually works so i put all of them)
+
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/devices/virtual/camera/flashlight/rear_flash
+
+
+SHRP_FLASH_MAX_BRIGHTNESS := 1
