@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_sunstone.mk
+    $(LOCAL_DIR)/twrp_sunstone.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_sunstone-user \
-    omni_sunstone-userdebug \
-    omni_sunstone-eng
+    twrp_sunstone-user \
+    twrp_sunstone-userdebug \
+    twrp_sunstone-eng
