@@ -16,7 +16,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/xiaomi/sunstone/device.mk)
 
 PRODUCT_DEVICE := sunstone
-PRODUCT_NAME := omni_sunstone
+PRODUCT_NAME := twrp_sunstone
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22101317C
 PRODUCT_MANUFACTURER := xiaomi
