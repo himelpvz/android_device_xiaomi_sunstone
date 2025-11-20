@@ -5,21 +5,21 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
+# Base product configuration (most specific first)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# TWRP common config
+$(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from sunstone device
+# Device configuration
 $(call inherit-product, device/xiaomi/sunstone/device.mk)
 
 PRODUCT_DEVICE := sunstone
 PRODUCT_NAME := twrp_sunstone
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22101317C
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
