@@ -6,6 +6,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/sunstone
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -13,20 +14,13 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# Boot control HAL
+# Boot control HAL (use shared libs only)
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-service \
     bootctrl.holi
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.holi \
-    libgptutils \
-    libz \
-    libcutils
-
+# A/B / OTA related tools
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
