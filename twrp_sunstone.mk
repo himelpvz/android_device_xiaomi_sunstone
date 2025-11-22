@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device configuration
-$(call inherit-product, device/xiaomi/sunstone/device.mk)
+$(call inherit-product, $(DEVICE_PATH)device.mk)
 
 PRODUCT_DEVICE := sunstone
 PRODUCT_NAME := twrp_sunstone
